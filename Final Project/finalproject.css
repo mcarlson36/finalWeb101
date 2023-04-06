@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #244D81;
+}
+
+#wrapper{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-top: none;
+    margin-top: 50px;
+}
+h1 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+#welcomeblock{
+    width: 100%;
+    height: 1200px;
+    background-color: white;
+}
+#welcomeblock p{
+    padding: 10px;
+    font-size: 125%;
+}
+#gallery { width: 100%; height: auto; overflow: auto; background-color: white; text-align: center;
+}
+
+.gall{
+    border: 1px solid #ccc;
+}
+.gall img{
+    width: 100%;
+    height: auto;
+}
+.des{
+    padding: 15px;
+    text-align: center;
+}
+.responsive{
+    padding: 0 6px;
+    float: left;
+    width: 50%;
+    margin: 6px 0;
+}
+.thumbnail:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:1000px;
+    height:auto;
+    display:block;
+    z-index:999;
+}
+
+#blockOne{
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+#blockOne p{
+   font-size: 125%
+}
+#blockOne img{
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+table {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+td, th { padding: 5px; font-family: Arial, sans-serif;
+         border-style: none; 
+}
+#containerFour{
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+#blockTwo{
+    width: 100%;
+    height: 1700px;
+    background-color: white;
+    text-align: center;
+}
+#blockTwo .gall{ border-style: none;
+}
+#blockTwo img {
+    border: 1px solid #ccc;
+}
+#welcomebanner{
+    display: block;
+    width: 100%;
+    height: 253px;
+    padding-top: 30px;
+    font-family: 'Shippori Mincho B1', serif;
+    color: #E8B80E;
+    font-size: 200%;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: darkblue;
+    text-align: center;
+    border-top: solid;
+    border-bottom: solid;
+    border-color: black;
+}
+#containerOne{
+    width: 100%;
+    height: 440px;;
+    border-bottom: solid;
+}
+#imageOne{
+    width: 50%;
+    height: 100%;
+    background-image: url(books.jpg);
+    background-size: cover;
+    float: left;
+}
+#imageTwo{
+    width: 50%;
+    height: 100%;
+    background-image: url(graduation2.jpg);
+    background-position: right center;
+    background-size: cover;
+    float: right;
+    border-left-style: solid;
+}
+#containerTwo{
+    width: 100%;
+    height: 407px;
+}
+#navbar{ 
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 79.3%; /* Full width */
+    color: black;
+    border-style: solid;
+    margin-left: -3px;
+}
+#navbar a{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+@media only screen and (max-width: 64em) {
+
+    #welcomebanner{
+        font-size: 175%;
+        padding-top: 10px;
+    }
+    #containerOne{
+        height: 300px;
+    }
+    #containerTwo{
+        height: 500px;
+    }
+    #welcomeblock p{
+        font-size: 115%
+    }
+    #gallery{
+        height: auto;
+    }
+    #blockTwo{
+        height: 1100px;
+    }
+    #navbar{ 
+        width: 78.3%;
+}
+    .thumbnail:hover{
+        position:relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height:auto;
+        display:block;
+        z-index:999;
+    }
+#containerOne{
+        background-image: url(graduation.jpg);
+        background-size: cover;
+        background-position: center;
+}
+#imageOne{
+    display: none;
+}
+#imageTwo{
+   display: none;
+}
+
+
+}
+
+@media only screen and (max-width: 37.5em) {
+    
+    #welcomebanner{
+        font-size: 155%;
+        padding-bottom: 5px;
+    }
+    #welcomeblock p{
+        font-size: 100%
+    }
+    #gallery{
+        height: auto;
+    }
+    .responsive{
+        width: 100%;
+    }
+    #blockTwo{
+        height: 2100px;
+    }
+    table{
+        height: 300px;
+    }
+    #navbar{ 
+        width: 77.3%;
+}
+   
+    table{
+        height: 300px;
+    }
+    .thumbnail:hover{
+        position:relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height:auto;
+        display:block;
+        z-index:999;
+    }
+#containerOne{
+        background-image: url(graduation.jpg);
+        background-size: cover;
+        background-position: center;
+}
+#imageOne{
+    display: none;
+}
+#imageTwo{
+   display: none;
+}
+
+
+  
+}
